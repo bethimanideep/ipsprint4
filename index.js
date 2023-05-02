@@ -5,7 +5,7 @@ const cookie = require("cookie-parser")
 const requestIp = require('request-ip');
 const winston = require("winston")
 const { MongoDB } = require("winston-mongodb")
-const { validator } = require("../middlewares/validator");
+const { validator } = require("./validator");
 
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const redis = require("redis").createClient({
